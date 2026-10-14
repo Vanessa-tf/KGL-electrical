@@ -1,11 +1,7 @@
 # KGL Electrical Website
 
 Built with Next.js (App Router), TypeScript, Tailwind CSS, PostgreSQL and Prisma.
-Layout is modelled after crushco.za.com (hero + feature highlights, about with
-stats, bold statement banner, services, office/contact block, footer with quick
-links), styled in KGL's navy and gold. Every section uses semantic HTML only —
-no <div> or <span> elements anywhere in the codebase.
-
+Live demo: https://kgl-electrical.vercel.app/ 
 ## Setup
 
 1. Install dependencies:
