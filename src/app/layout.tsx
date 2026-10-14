@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -32,7 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${archivo.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-offwhite font-sans text-ink antialiased">
-        {children}
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

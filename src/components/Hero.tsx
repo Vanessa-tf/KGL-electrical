@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import TypedText from "@/components/TypedText";
 import { BoltIcon, SolarIcon, ShieldIcon } from "@/components/icons/Icons";
 
@@ -42,12 +43,12 @@ export default function Hero() {
           <p className="mt-5 min-h-[2.5rem] text-xl font-semibold text-white/70">
             <TypedText />
           </p>
-          <a
-            href="#about"
+          <Link
+            href="/about"
             className="mt-8 inline-block rounded-sm bg-gold px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-navy transition-colors hover:bg-gold-light"
           >
             More About KGL
-          </a>
+          </Link>
         </article>
 
         <ul className="flex flex-col gap-8 border-t border-white/10 pt-10 lg:w-2/5 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">

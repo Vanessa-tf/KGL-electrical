@@ -1,13 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PinIcon, PhoneIcon, MailIcon } from "@/components/icons/Icons";
 
 const quickLinks = [
-  { href: "#services-electrical", label: "Electrical Services" },
-  { href: "#services-solar", label: "Solar Solutions" },
-  { href: "#services-security", label: "Security Systems" },
-  { href: "#services-automation", label: "Automation" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/services#services-electrical", label: "Electrical Services" },
+  { href: "/services#services-solar", label: "Solar Solutions" },
+  { href: "/services#services-security", label: "Security Systems" },
+  { href: "/services#services-automation", label: "Automation" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -55,7 +56,7 @@ export default function Footer() {
           <ul className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm text-white/70">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="hover:text-gold">{link.label}</a>
+                <Link href={link.href} className="hover:text-gold">{link.label}</Link>
               </li>
             ))}
           </ul>

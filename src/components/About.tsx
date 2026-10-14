@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Counter from "@/components/Counter";
 
 const stats = [
@@ -51,12 +52,12 @@ export default function About() {
             </p>
           </div>
 
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="w-fit rounded-sm bg-navy px-7 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-navy-light"
           >
             Work With Us
-          </a>
+          </Link>
 
           <ul className="mt-4 grid gap-8 border-t border-navy/10 pt-8 sm:grid-cols-3">
             {stats.map((stat) => (
