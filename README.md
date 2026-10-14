@@ -32,23 +32,14 @@ Live demo: https://kgl-electrical.vercel.app/
 - src/lib/prisma.ts — Prisma client instance
 - prisma/schema.prisma — ContactSubmission, Service, Testimonial models
 
-## Colours
+## Layout notes 
 
-- Navy: #0B1E3A
-- Navy light: #14294F
-- Gold: #F5A800
-- Off-white: #F4F6F8
-
-## Layout notes (mirrors crushco.za.com structure)
-
-1. Sticky navbar with a "Services" dropdown (like Crushco's Coal Crushers submenu)
+1. Sticky navbar with a "Services" dropdown
 2. Hero: big headline "We Are KGL Electrical" + CTA buttons + 3 highlight cards
-3. About: company text + stats row (placeholder numbers — swap in real figures,
-   e.g. years established, projects completed, once the client provides them)
+3. About: company text + stats row 
 4. Statement: full-width gold banner with a bold one-line positioning statement
-5. Services: the four categories from the client brief, each with its own
-   anchor id so the nav dropdown scrolls straight to it
-6. Vision & Mission, Values, Structure — same content sections as the client doc
+5. Services: the four categories from the client brief
+6. Vision & Mission, Values, Structure 
 7. Contact: "Our Office" address/phone/email block + working contact form
 8. Footer: quick links + Residential/Commercial/Industrial banner + copyright
 
@@ -57,9 +48,4 @@ Live demo: https://kgl-electrical.vercel.app/
 Recommended: Vercel for hosting + Neon or Supabase for the Postgres database.
 Add DATABASE_URL as an environment variable in your Vercel project settings.
 
-## Note
 
-node_modules and .next are excluded from this zip. Run `npm install` first.
-Prisma's client could not be generated inside this sandbox (its engine download
-is blocked here), so src/lib/prisma.ts will show a type error until you run
-`npx prisma generate` locally, where it resolves automatically.
